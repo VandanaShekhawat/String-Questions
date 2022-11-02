@@ -1,0 +1,36 @@
+import java.util.*;
+// To check whether the given string is anagram or not.
+public class AnagramsStrings {
+    public static void main(String[] args) {
+        boolean ans = true;
+        String n = "cat";
+        String m = "act";
+        boolean c[] = new boolean[n.length()];
+        Arrays.fill(c, false);
+        if(n.length() != m.length()){
+            ans = false;
+        }
+        else{
+            for(int i = 0; i < n.length(); i++){
+                int j = 0;
+                while (j < m.length()) {
+                    if(n.charAt(i) == m.charAt(j)){
+                        if(c[j] == false){
+                            c[j] = true;
+                            break;
+                        }
+                        else{
+                            ans = false;
+                        }                    
+                    }
+                    else if(j == m.length()-1 && n.charAt(i) != m.charAt(j)){
+                       
+                        ans = false;
+                    }
+                    j++;
+                }
+            }
+        }
+        System.out.println(ans);
+    }
+}   
