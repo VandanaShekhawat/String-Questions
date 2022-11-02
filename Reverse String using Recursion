@@ -1,0 +1,16 @@
+public class MyClass {
+ // Reverse a String using recursion
+    static String reverse (String str,int len, String rev)
+{
+    if(len<0)
+        return rev;
+        rev = rev+str.charAt(len);
+        return reverse(str, len-1,rev);
+    }
+    public static void main (String args[]){
+        String str ="Salesforce Developer";
+        String rev = " ";
+        int len = str.length();
+        System.out.println("Reverse String "+ str+" =" + reverse(str,len-1,rev));
+    }
+} 
