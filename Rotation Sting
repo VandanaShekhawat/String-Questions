@@ -1,0 +1,19 @@
+public class MyClass {
+ public static void main (String args []){
+     // To find rotation in  a given string
+  String s1 ="abcc";
+  String s2 = "ccba";
+   if(s1.length() != s2.length()){
+       System.out.println("Not a rotation");
+   }
+   else
+   {
+       String temp = s1+s1;
+       if(temp.indexOf(s2) != -1){
+           System.out.println("Yes");
+       }
+       System.out.println("No");
+   }
+   
+ }
+}
