@@ -1,0 +1,16 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To check given strings is a rotation of each other or not
+    String str1 = "aacd";
+    String str2 = "acda";
+    String res = str1+str2;
+    
+    if(res.contains(str2) && str1.length() == str2.length()){
+        System.out.println("String is rotation ");
+    }
+    else
+    {
+        System.out.println("String is not a rotation");
+    }
+    }
+}
