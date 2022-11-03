@@ -1,0 +1,41 @@
+public class MyClass {
+    public static void main(String args[]) {
+     // To count number of vowles, consonents, digit and space in a given string.
+     String str = " Vandana is no 1 Salesforce Developer";
+     int vowles =0; int consonents = 0;  int digits =0; int space =0;
+     char ch =' ';
+     str = str.toLowerCase();
+     for(int i = 0;i<str.length();++i){
+          ch = str.charAt(i);
+     
+     // check if any of the character is a vowles
+     
+     if(ch =='a' || ch == 'e'|| ch == 'i'|| ch =='o'||
+     ch == 'u'){
+         ++vowles;
+     }
+     
+     // check if any of the character is consonent
+     
+   else  if((ch>='a' && ch<= 'z')){
+         ++ consonents;
+        }
+        
+        // check if any of the character is digit
+        
+      else  if(ch>='0' && ch<= '9'){
+            ++ digits;
+        }
+        
+        // check if any of the character is space
+        
+       else if(ch == ' '){
+            ++space;
+        }
+     }
+     System.out.println("Vowles are : "+ vowles);
+     System.out.println("Consonents are : " + consonents);
+     System.out.println("Digits are : "+ digits);
+     System.out.println("Space are : "+ space);
+    }
+}
