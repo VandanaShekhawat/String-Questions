@@ -1,0 +1,30 @@
+public class MyClass {
+    public static void main(String args[]) {
+      int  no [] = {2,3,1,3,4,5,6,7,4,5,6};
+      int temp [] = new int [no.length];
+      int count = 0;
+      int len = no.length;
+      int min = len; int max = 0;
+      for(int i = 0;i<len;i++){
+          count = 1;
+          if(temp[i] == 1){
+              continue;
+          }
+          for(int j = i+1; j<len;j++){
+              if(no[i] ==no [j]){
+                  count++;
+                  temp[j] = 1;
+              }
+          }
+          if(max<count){
+              max = count;
+          }
+          if(count<min){
+              min = count;
+          }
+          System.out.println("Count of interger is : "+ no[i]+ "=" + count);
+      }
+      System.out.println("Max occured integer is : " + max);
+         System.out.println("Mi occured integer is : " + min);
+    }
+}
