@@ -1,0 +1,16 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // Programme to convert String into Integer without using built-in-function.
+      String str = "1234";
+      System.out.println(StringToInteger(str)+10);
+         }
+
+public static int StringToInteger(String str){
+    int num = 0;
+    int len = str.length();
+    for(int i = 0; i<len;i++){
+        num = num *10 + ((int)str.charAt(i)-48);    
+    }
+ return num;
+    }
+}
