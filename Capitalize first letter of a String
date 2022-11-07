@@ -1,0 +1,23 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To capitilize first letter of a string.
+        
+     String str = "hello world";            // Output : Hello World
+     char ch [] = str.toCharArray();
+     for(int i = 0; i<str.length();i++){
+         if(i==0){
+             int a = ch[i];
+             a = a-32;
+             ch[i] = (char) a;
+         }
+         else if ( ch[i] == ' '){
+            int a = ch[i+1];
+            a = a-32;
+            ch[i+1] = (char) a;
+         }
+     }
+         String ans = new String (ch);
+         System.out.println(ans);
+     
+    }
+}
