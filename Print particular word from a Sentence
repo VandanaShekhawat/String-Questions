@@ -1,0 +1,22 @@
+public class RemoveCharacher {
+    public static void main(String[] args) {
+        String s = "my name is krishna"; // TO print particular word from a given sentence
+        String a = "name";
+        int j = 0;
+        char[] ans = new char[a.length()];
+        for(int i = 0; i < s.length(); i++){
+            if(j == a.length()){
+            
+                break;
+            }
+            if(s.charAt(i) == a.charAt(j)){
+                ans[j] = s.charAt(i);
+                j++;
+            }
+            else{
+                j = 0;
+            }
+        }
+       System.out.println(new String(ans));
+    }
+}
