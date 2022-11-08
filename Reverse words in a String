@@ -1,0 +1,25 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // Reverse words in a String.
+String str = "I am Salesforce Developer";
+int i=0,j,k =0;
+i = str.length()-1;
+while(i>=0){
+j = i;    
+while(str.charAt(j) != ' ' && i>0)
+    j--;
+    if(j==0)
+    k=0;
+    
+    else 
+        k = j+1;
+    
+    while(k<=i){
+        System.out.print(str.charAt(k));
+        k++;
+    }
+    System.out.print(" ");
+    i= j-1;
+        }
+    }
+}
