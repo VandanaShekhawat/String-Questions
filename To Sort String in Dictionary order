@@ -1,0 +1,19 @@
+public class MyClass {
+    public static void main(String args[]) {
+    // To sort the given string in dictionary order
+   String str = "Vandana"; // aaadnv
+   str = str.toLowerCase();
+   char ch [] = str.toCharArray();
+   char temp;
+   for(int i = 0;i<str.length(); i++){
+       for(int j = i+1; j<str.length(); j++){
+           if(ch[i] > ch[j]){
+               temp = ch[i];
+               ch[i] = ch[j];
+               ch[j] = temp;
+           }
+       }
+   }
+   System.out.print(new String(ch));
+    }
+}
