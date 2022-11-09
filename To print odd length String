@@ -1,0 +1,11 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To print odd length string 
+String str1 ="gopi sakhi radha krishna rasa rk";
+for(String str : str1.split(" ")){
+if(str.length()%2==0){
+    System.out.println(str);
+            }
+        }
+    }
+}
