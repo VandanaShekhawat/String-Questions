@@ -1,0 +1,19 @@
+public class MyClass {
+    public static void main(String args[]) {
+      String str = "vandana shekhawat";
+       int vowelcount = 0;
+       int concount = 0;
+       for(int i = 0;i<=str.length()-1;i++){
+           if(str.charAt(i) =='a'|| str.charAt(i) =='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'){
+               vowelcount++;
+           }
+           else{
+               concount++;
+            
+           }
+       }
+       System.out.println("vowel count: "+ vowelcount);
+       System.out.println("consonent count: " + concount);
+    }
+    
+}
