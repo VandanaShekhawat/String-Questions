@@ -1,0 +1,14 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // Decimal to binary conversion.
+    int no = 10;
+    String ans = " ";
+    int rem = 0;
+     while(no!=0){
+          rem = no%2;
+          ans = rem+ ans;
+           no =no/2;  
+        }
+         System.out.println(ans);
+    }
+}
