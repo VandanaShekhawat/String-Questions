@@ -1,0 +1,24 @@
+public class digitFrequency {
+    public static void main(String[] args) {
+        int no = 12231;
+        int dig =0;
+        int temp = no;
+        int arr [] = new int [10];
+        while(temp >0){
+            dig = temp%10;
+            for(int i = 0; i<=9;i++){
+                if(dig == i){
+                    arr[i]++;
+                }
+            }
+            temp= temp/10;
+        }
+        System.out.println("original Number : " + temp);
+        for(int i = 0; i<= 9;i++){
+            if(arr[i]!=0){
+               System.out.println("Frequency of " + i + " is " + arr[i]); 
+            }
+        }
+    }
+    
+}
